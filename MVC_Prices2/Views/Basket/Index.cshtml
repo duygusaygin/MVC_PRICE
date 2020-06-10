@@ -38,9 +38,9 @@
                 success: function (data) {
                     if (data.success) {
                         Swal.fire(
-                            'Success',
-                            'Offered successfully.',
-                            'success'
+                            'Successo',
+                            'Offerto con successo.',//Offered successfully
+                            'Successo'
                         ).then((result) => {
                             if (result.value) {
                                 $("#offerExpsModal").modal("hide");
@@ -49,8 +49,8 @@
                         });
                     } else {
                         Swal.fire(
-                            'Offering Failed!',
-                            ' Please try again later.',
+                            'Offerta fallita!',//Offering Failed
+                            ' Riprova più tardi.',//Please try again later
                             'error'
                         )
 
@@ -109,7 +109,7 @@
                                     <font size="1">
                                         (telaio pieno a "L" senz'aletta)<br />
                                         <font size="2" color="black" face="tahoma">
-                                            <b><font color="black">@el.ProductName</font></b><font color="black"><br>Soglia bassa in alluminio</font><br><font color="navy"> apertura a @el.Direction (DX)</font><br><font size="2">
+                                            <b><font color="black">@el.ProductName</font></b><font color="black"><br>Soglia bassa in alluminio</font><br><font color="navy"> apertura a @el.Direction (DX)</font><br><font size="2"><!--Alum. alçak eşik-->
                                                 @el.System<br><font size="1">
                                                     @el.Color in massa<br>guarnizione grigia
                                                     <font size="1">
@@ -187,10 +187,10 @@
 }
 else
 {
-    <div class="col-md-12 ">
-        <div class="alert alert-danger text-center  bg-danger" style="margin-top: 25%;"><strong> Nessun prodotto selezionato !</strong></div>
+<div class="col-md-12 ">
+    <div class="alert alert-danger text-center  bg-danger" style="margin-top: 25%;"><strong> Nessun prodotto selezionato !</strong></div><!-- Hiçbir ürün seçilmedi-->
 
-    </div>
+</div>
 }
 <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -297,7 +297,7 @@ else
                 </table>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-xs" onclick="basketAddNew()">Add New</button>
+                <button type="button" class="btn btn-secondary btn-xs" onclick="basketAddNew()">Aggiungi</button><!--Add New-->
                 <button type="button" class="btn btn-primary  btn-xs" onclick="basketSaveChanges()">Save Changes</button>
             </div>
         </div>

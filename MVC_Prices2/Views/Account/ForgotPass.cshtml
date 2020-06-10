@@ -34,18 +34,18 @@
         </a>
     </div><!-- logo -->
     <div class="simple-page-form animated flipInY" id="reset-password-form">
-        <h4 class="form-title m-b-xl text-center">Forgot Your Password ?</h4>
+        <h4 class="form-title m-b-xl text-center">Dimenticato La Password?</h4><!--Forgot Your Password -->
         @using (Html.BeginForm())
         {
             @Html.AntiForgeryToken()
 
             <div class="form-group">
 
-                @Html.EditorFor(model => model.Email, new {htmlAttributes = new {@class = "form-control", type = "email", id = "sign-in-email", placeholder = "E-mail"}})
-                @Html.ValidationSummary(true, "", new {@class = "danger"})
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", type = "email", id = "sign-in-email", placeholder = "E-mail" } })
+                @Html.ValidationSummary(true, "", new { @class = "danger" })
 
             </div>
-            <input onclick="DisableButton()" id="button" type="submit" class="btn btn-primary" value="RESET YOUR PASSWORD">
+            <input onclick="DisableButton()" id="button" type="submit" class="btn btn-primary" value="REIMPOSTA LA TUA PASSWORD"><!--RESET YOUR PASSWORD-->
         }
     </div><!-- #reset-password-form -->
 
@@ -54,7 +54,7 @@
     function DisableButton() {
 
         var button = document.getElementById("button");
-        button.value="Please Wait..."
+        button.value="Attendere prego..."//Please Wait
         
     }
 </script>
